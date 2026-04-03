@@ -1,6 +1,6 @@
 import 'dotenv/config';
-import { db } from './src/db/index';
-import { services } from './src/db/schema';
+import { db } from './src/db/index.js';
+import { services } from './src/db/schema.js';
 
 async function seed() {
   console.log('🌱 Seeding full service catalog with user details...');
