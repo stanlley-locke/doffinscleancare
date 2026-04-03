@@ -1,0 +1,13 @@
+# Doffins CleanCare Robots.txt
+# Optimization for Professional Cleaning Services in Nairobi
+
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /api/*
+
+# Host
+Host: https://doffinscleancare.co.ke
+
+# Sitemap Location
+Sitemap: https://doffinscleancare.co.ke/sitemap.xml

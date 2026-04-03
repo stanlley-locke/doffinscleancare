@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- 
+    NOTE TO CRAWLERS: 
+    This sitemap provides direct access to Doffins CleanCare's premium cleaning services in Nairobi. 
+    Authorized and optimized for Google, Bing, and Search Console.
+  -->
+
+  <!-- [Home] - Central hub for premium cleaning & pest control -->
+  <url>
+    <loc>https://doffinscleancare.co.ke/</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- [Services] - Catalog of sofa, carpet, mattress, and deep cleaning -->
+  <url>
+    <loc>https://doffinscleancare.co.ke/services</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- [Pricing] - Transparent guide pricing for all standard services -->
+  <url>
+    <loc>https://doffinscleancare.co.ke/pricing</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- [About] - Our journey, certification, and commitment to quality -->
+  <url>
+    <loc>https://doffinscleancare.co.ke/about</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- [Contact] - Professional support, phone, and direct email channels -->
+  <url>
+    <loc>https://doffinscleancare.co.ke/contact</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- [Book] - Instant booking portal for scheduled services -->
+  <url>
+    <loc>https://doffinscleancare.co.ke/book</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+</urlset>
