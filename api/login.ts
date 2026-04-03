@@ -1,4 +1,7 @@
 // Vercel Serverless Function: api/login.ts
+import { db } from '../src/db/index.js';
+import { admins } from '../src/db/schema.js';
+
 export default async function handler(req: any, res: any) {
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' });
