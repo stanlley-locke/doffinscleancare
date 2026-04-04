@@ -71,43 +71,78 @@ export function HomePage() {
 
         {/* JSON-LD Structured Data */}
         <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "LocalBusiness",
-            "name": "Doffins CleanCare",
-            "image": "https://doffinscleancare.co.ke/logo.jpeg",
-            "url": "https://doffinscleancare.co.ke",
-            "telephone": "+254704470840",
-            "priceRange": "$$",
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "Nairobi CBD",
-              "addressLocality": "Nairobi",
-              "addressCountry": "KE"
+          {JSON.stringify([
+            {
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              "name": "Doffins CleanCare",
+              "image": "https://doffinscleancare.co.ke/doffinslogo.png",
+              "url": "https://doffinscleancare.co.ke",
+              "telephone": "+254704470840",
+              "priceRange": "$$",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Nairobi CBD",
+                "addressLocality": "Nairobi",
+                "addressCountry": "KE"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": -1.2921,
+                "longitude": 36.8219
+              },
+              "openingHoursSpecification": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                  "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
+                ],
+                "opens": "08:00",
+                "closes": "18:00"
+              },
+              "sameAs": [
+                "https://facebook.com/doffinscleancare",
+                "https://instagram.com/doffinscleancare"
+              ]
             },
-            "geo": {
-              "@type": "GeoCoordinates",
-              "latitude": -1.2921,
-              "longitude": 36.8219
+            {
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Doffins CleanCare",
+              "alternateName": "Doffins & Co. Ltd",
+              "url": "https://doffinscleancare.co.ke",
+              "logo": "https://doffinscleancare.co.ke/doffinslogo.png",
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+254704470840",
+                "contactType": "customer service",
+                "areaServed": "KE",
+                "availableLanguage": "English"
+              }
             },
-            "openingHoursSpecification": {
-              "@type": "OpeningHoursSpecification",
-              "dayOfWeek": [
-                "Monday",
-                "Tuesday",
-                "Wednesday",
-                "Thursday",
-                "Friday",
-                "Saturday"
-              ],
-              "opens": "08:00",
-              "closes": "18:00"
+            {
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              "name": "Doffins CleanCare",
+              "url": "https://doffinscleancare.co.ke",
+              "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://doffinscleancare.co.ke/services?q={search_term_string}",
+                "query-input": "required name=search_term_string"
+              }
             },
-            "sameAs": [
-              "https://facebook.com/doffinscleancare",
-              "https://instagram.com/doffinscleancare"
-            ]
-          })}
+            {
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://doffinscleancare.co.ke"
+                }
+              ]
+            }
+          ])}
         </script>
       </Helmet>
 

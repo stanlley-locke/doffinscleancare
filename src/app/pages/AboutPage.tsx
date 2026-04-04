@@ -9,6 +9,28 @@ export function AboutPage() {
       <Helmet>
         <title>About Us | Doffins CleanCare</title>
         <meta name="description" content="Discover the journey of Doffins CleanCare from 2019 to becoming Kenya's trusted cleaning and pest control registered company Doffins & Co. Ltd." />
+        
+        {/* JSON-LD Breadcrumbs */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://doffinscleancare.co.ke"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "About Us",
+                "item": "https://doffinscleancare.co.ke/about"
+              }
+            ]
+          })}
+        </script>
       </Helmet>
 
       {/* Hero Section */}

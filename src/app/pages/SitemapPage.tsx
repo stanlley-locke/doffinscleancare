@@ -48,6 +48,28 @@ export function SitemapPage() {
       <Helmet>
         <title>Sitemap - Doffins CleanCare | Comprehensive Site Navigation</title>
         <meta name="description" content="A complete guide to the Doffins CleanCare platform. Eaily navigate between our services, pricing, about us, and booking pages." />
+        
+        {/* JSON-LD Breadcrumbs */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://doffinscleancare.co.ke"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Sitemap",
+                "item": "https://doffinscleancare.co.ke/sitemap"
+              }
+            ]
+          })}
+        </script>
       </Helmet>
 
       <section className="py-32 bg-slate-50 min-h-screen">

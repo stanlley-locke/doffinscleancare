@@ -1,7 +1,5 @@
 import { Link, useLocation } from 'react-router';
 import { Phone, Mail, Menu, X, ArrowRight } from 'lucide-react';
-import { useState, useEffect } from 'react';
-import logo from '../../imports/doffinscoltd_logo.jpeg';
 import { motion, AnimatePresence } from 'motion/react';
 
 export function Header() {
@@ -53,7 +51,7 @@ export function Header() {
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center group relative z-[110]">
             <div className="relative overflow-hidden rounded-md bg-white p-1 shadow-xl shadow-primary/5 transition-all duration-500 group-hover:scale-110">
-              <img src={logo} alt="Doffins CleanCare" className="h-10 md:h-12 w-auto" />
+              <img src="/doffinslogo.png" alt="Doffins CleanCare" className="h-10 md:h-12 w-auto" />
             </div>
             <div className="ml-4 flex flex-col">
               <span className={`font-black text-xl md:text-2xl tracking-tighter leading-none ${shouldShowTransparent || mobileMenuOpen ? 'text-white' : 'text-primary'}`}>
@@ -66,18 +64,19 @@ export function Header() {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-12">
+          <nav className="hidden lg:flex items-center gap-12" itemScope itemType="http://schema.org/SiteNavigationElement">
             {navLinks.map((link) => (
               <Link
                 key={link.path}
                 to={link.path}
+                itemProp="url"
                 className={`text-xs font-black uppercase tracking-[0.2em] transition-all hover:scale-110 relative py-2 ${
                   isActive(link.path)
                     ? (shouldShowTransparent ? 'text-secondary' : 'text-primary')
                     : (shouldShowTransparent ? 'text-white/70 hover:text-white' : 'text-slate-400 hover:text-primary')
                 }`}
               >
-                {link.label}
+                <span itemProp="name">{link.label}</span>
                 {isActive(link.path) && (
                   <motion.div 
                     layoutId="nav-underline"

@@ -32,6 +32,28 @@ export function ServicesPage() {
       <Helmet>
         <title>Our Services | Doffins CleanCare </title>
         <meta name="description" content="View our full range of cleaning and pest control services in Nairobi. From carpet and sofa cleaning to deep house and commercial cleaning." />
+        
+        {/* JSON-LD Breadcrumbs */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://doffinscleancare.co.ke"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Services",
+                "item": "https://doffinscleancare.co.ke/services"
+              }
+            ]
+          })}
+        </script>
       </Helmet>
 
       {/* Hero Section */}

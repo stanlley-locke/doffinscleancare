@@ -69,6 +69,28 @@ export function BookingPage() {
       <Helmet>
         <title>Book Now | Doffins CleanCare</title>
         <meta name="description" content="Secure your professional cleaning or pest control service in Nairobi. Fill out our quick booking form for an instant quote." />
+        
+        {/* JSON-LD Breadcrumbs */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://doffinscleancare.co.ke"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Book",
+                "item": "https://doffinscleancare.co.ke/book"
+              }
+            ]
+          })}
+        </script>
       </Helmet>
 
       <section className="relative py-32 text-white overflow-hidden bg-primary">

@@ -24,6 +24,28 @@ export function PricingPage() {
       <Helmet>
         <title>Pricing | Doffins CleanCare </title>
         <meta name="description" content="Transparent pricing for carpet cleaning, sofa cleaning, mattress cleaning, deep cleaning, and pest control services in Nairobi. Contact us for a free quote." />
+        
+        {/* JSON-LD Breadcrumbs */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://doffinscleancare.co.ke"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Pricing",
+                "item": "https://doffinscleancare.co.ke/pricing"
+              }
+            ]
+          })}
+        </script>
       </Helmet>
 
       {/* Hero Section */}

@@ -67,6 +67,28 @@ export function ContactPage() {
       <Helmet>
         <title>Contact Us | Doffins CleanCare</title>
         <meta name="description" content="Contact Doffins CleanCare for professional cleaning and pest control services. Call 0704 470 840, email doffinscoltd@gmail.com, or book online. Nairobi, Kenya." />
+        
+        {/* JSON-LD Breadcrumbs */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://doffinscleancare.co.ke"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Contact",
+                "item": "https://doffinscleancare.co.ke/contact"
+              }
+            ]
+          })}
+        </script>
       </Helmet>
 
       {/* Hero Section */}
