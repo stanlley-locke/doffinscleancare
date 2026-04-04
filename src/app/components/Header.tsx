@@ -1,5 +1,6 @@
 import { Link, useLocation } from 'react-router';
 import { Phone, Mail, Menu, X, ArrowRight } from 'lucide-react';
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 
 export function Header() {
