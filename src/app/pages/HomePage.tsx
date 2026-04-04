@@ -59,8 +59,8 @@ export function HomePage() {
   return (
     <>
       <Helmet>
-        <title>Home | Doffins CleanCare</title>
-        <meta name="description" content="Professional carpet, sofa, mattress cleaning and pest control services in Nairobi. Top-rated cleaning experts with same-day service. Get a free quote now!" />
+        <title>Doffins CleanCare | Professional Cleaning & Pest Control Nairobi</title>
+        <meta name="description" content="Nairobi's most trusted partner for professional carpet, sofa, mattress cleaning, and pest control. Registered company Doffins & Co. Ltd. Restore freshness to your space today." />
         
         {/* Open Graph / Social SEO */}
         <meta property="og:type" content="website" />
@@ -77,8 +77,10 @@ export function HomePage() {
               "@type": "LocalBusiness",
               "name": "Doffins CleanCare",
               "image": "https://doffinscleancare.co.ke/doffinslogo.png",
+              "@id": "https://doffinscleancare.co.ke/#localbusiness",
               "url": "https://doffinscleancare.co.ke",
               "telephone": "+254704470840",
+              "email": "doffinscoltd@gmail.com",
               "priceRange": "$$",
               "address": {
                 "@type": "PostalAddress",
@@ -88,17 +90,23 @@ export function HomePage() {
               },
               "geo": {
                 "@type": "GeoCoordinates",
-                "latitude": -1.2921,
-                "longitude": 36.8219
+                "latitude": -1.286389,
+                "longitude": 36.817223
               },
-              "openingHoursSpecification": {
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": [
-                  "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
-                ],
-                "opens": "08:00",
-                "closes": "18:00"
-              },
+              "openingHoursSpecification": [
+                {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                  "opens": "07:00",
+                  "closes": "19:00"
+                },
+                {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": "Saturday",
+                  "opens": "08:00",
+                  "closes": "18:00"
+                }
+              ],
               "sameAs": [
                 "https://facebook.com/doffinscleancare",
                 "https://instagram.com/doffinscleancare"
@@ -107,8 +115,7 @@ export function HomePage() {
             {
               "@context": "https://schema.org",
               "@type": "Organization",
-              "name": "Doffins CleanCare",
-              "alternateName": "Doffins & Co. Ltd",
+              "name": "Doffins & Co. Ltd",
               "url": "https://doffinscleancare.co.ke",
               "logo": "https://doffinscleancare.co.ke/doffinslogo.png",
               "contactPoint": {

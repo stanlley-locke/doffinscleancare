@@ -8,7 +8,7 @@ export function SitemapPage() {
     { 
       title: "Home", 
       path: "/", 
-      desc: "Nairobi's #1 premium cleaning and pest control service provider. Start here to explore our offerings.",
+      desc: "Nairobi's most trusted partner for professional carpet, sofa, mattress cleaning, and pest control. Restore freshness to your space today.",
       icon: <Home className="h-6 w-6" />
     },
     { 
