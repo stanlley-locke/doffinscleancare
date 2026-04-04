@@ -3,7 +3,7 @@ import { db } from './src/db/index.js';
 import { services } from './src/db/schema.js';
 
 async function seed() {
-  console.log('🌱 Seeding full service catalog with user details...');
+  console.log('Seeding full service catalog with user details...');
 
   const catalog = [
     {
@@ -141,7 +141,7 @@ async function seed() {
     });
   }
 
-  console.log('✅ Catalog seeding complete with final details!');
+  console.log('Catalog seeding complete with final details!');
   process.exit(0);
 }
 

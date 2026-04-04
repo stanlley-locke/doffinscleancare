@@ -22,7 +22,7 @@ export function PricingPage() {
   return (
     <>
       <Helmet>
-        <title>Pricing - Doffins CleanCare | Affordable Cleaning Services</title>
+        <title>Pricing | Doffins CleanCare </title>
         <meta name="description" content="Transparent pricing for carpet cleaning, sofa cleaning, mattress cleaning, deep cleaning, and pest control services in Nairobi. Contact us for a free quote." />
       </Helmet>
 

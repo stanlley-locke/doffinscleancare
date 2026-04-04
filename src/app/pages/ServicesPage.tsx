@@ -30,7 +30,7 @@ export function ServicesPage() {
   return (
     <>
       <Helmet>
-        <title>Our Services - Doffins CleanCare | Professional Cleaning Nairobi</title>
+        <title>Our Services | Doffins CleanCare </title>
         <meta name="description" content="View our full range of cleaning and pest control services in Nairobi. From carpet and sofa cleaning to deep house and commercial cleaning." />
       </Helmet>
 

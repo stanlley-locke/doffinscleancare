@@ -67,7 +67,7 @@ export function BookingPage() {
   return (
     <>
       <Helmet>
-        <title>Book Now - Doffins CleanCare | Premium Cleaning Services</title>
+        <title>Book Now | Doffins CleanCare</title>
         <meta name="description" content="Secure your professional cleaning or pest control service in Nairobi. Fill out our quick booking form for an instant quote." />
       </Helmet>
 

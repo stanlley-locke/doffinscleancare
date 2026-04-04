@@ -1,4 +1,4 @@
-# Doffins CleanCare 🧼
+# Doffins CleanCare 
 ### #1 Premium Cleaning & Pest Control Services in Nairobi
 
 [![Website Status](https://img.shields.io/website?url=https%3A%2F%2Fdoffinscleancare.co.ke)](https://doffinscleancare.co.ke)
@@ -10,28 +10,28 @@ Doffins CleanCare is a professionally modernized, full-stack web application des
 
 ---
 
-## ✨ Key Features
+##  Key Features
 
-### 🏢 Public Experience
+###  Public Experience
 - **Dynamic Service Catalog**: Fetch and display services (Carpet, Sofa, Mattress, Deep House, etc.) directly from the database.
 - **Instant Booking Protocol**: Dual-channel inquiry system that saves leads to the database and automatically triggers a pre-filled email client (Gmail/Outlook).
 - **Premium UI/UX**: Immersive animations using **Framer Motion**, glassmorphism aesthetics, and obsidian-grade dark modes.
 - **Fully Responsive**: Optimized for every screen size—from iPhone 12 to 4K Desktop monitors.
 
-### 🔐 Administrative Portal
+###  Administrative Portal
 - **Service Manager**: Full CRUD (Create, Read, Update, Delete) capabilities. Toggle between professional **Grid** and **List** views.
 - **Lead Intelligence**: Real-time tracking of customer inquiries and bookings.
 - **Data Export**: One-click CSV export for lead analysis and CRM integration.
 - **Secure Access**: Backend-hardened login system with secure credential processing.
 
-### 🚀 Performance & SEO
+###  Performance & SEO
 - **Search Optimization**: Integrated `sitemap.xml`, `robots.txt`, and **JSON-LD Local Business Schema**.
 - **Social SEO**: Full Open Graph (OG) and Twitter Card support for professional link sharing.
 - **Branding**: Official favicon and Apple Touch Icon support for Google Search visibility.
 
 ---
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 - **Frontend**: React 18, Vite, TypeScript
 - **Styling**: Tailwind CSS
@@ -43,7 +43,7 @@ Doffins CleanCare is a professionally modernized, full-stack web application des
 
 ---
 
-## 🏃 Getting Started
+##  Getting Started
 
 ### 1. Installation
 ```bash
@@ -80,7 +80,7 @@ npm run dev
 
 ---
 
-## 👨‍💻 Administrative Access
+##  Administrative Access
 
 - **Login URL**: `/admin/login`
 - **Default Dashboard**: `/admin`
@@ -88,11 +88,9 @@ npm run dev
 
 ---
 
-## 📄 License & Attribution
+##  License & Attribution
 
 This project was built for **Doffins CleanCare (Doffins & Co. Ltd)**.
-Original Design Inspiration: [Premium Cleaning Services (Figma)](https://www.figma.com/design/GzvDQy8feYoJFOUo1JeDJM/Premium-Cleaning-Services-Website)
-
 ---
 
-Developed with ❤️ for **Doffins CleanCare**.
+Developed  for **Doffins CleanCare**.

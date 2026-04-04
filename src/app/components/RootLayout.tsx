@@ -10,7 +10,7 @@ export function RootLayout() {
   return (
     <>
       <Helmet>
-        <title>Doffins CleanCare - Premium Cleaning Services in Nairobi, Kenya</title>
+        <title>Doffins CleanCare | Premium Cleaning Services in Nairobi, Kenya</title>
         <meta name="description" content="Professional cleaning and pest control services in Nairobi for residential and commercial customers." />
         <meta name="keywords" content="carpet cleaning Nairobi, sofa cleaning Kenya, mattress cleaning, pest control, fumigation services, deep cleaning, office cleaning, Doffins CleanCare" />
         <meta property="og:title" content="Doffins CleanCare - Premium Cleaning Services in Nairobi" />
@@ -37,6 +37,9 @@ export function RootLayout() {
             className="flex items-center justify-center w-14 h-14 bg-[#1877F2] text-white rounded-full shadow-2xl hover:scale-110 transition-transform group relative"
             aria-label="Follow us on Facebook"
           >
+            <div className="absolute right-full mr-4 bg-white text-primary px-4 py-2 text-sm font-bold shadow-xl whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none border border-slate-100">
+              Chat with us on Facebook
+            </div>
             <Facebook className="h-6 w-6" />
           </motion.a>
           
@@ -50,6 +53,9 @@ export function RootLayout() {
             className="flex items-center justify-center w-14 h-14 bg-gradient-to-tr from-[#f9ce34] via-[#ee2a7b] to-[#6228d7] text-white rounded-full shadow-2xl hover:scale-110 transition-transform group relative"
             aria-label="Follow us on Instagram"
           >
+            <div className="absolute right-full mr-4 bg-white text-primary px-4 py-2 text-sm font-bold shadow-xl whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none border border-slate-100">
+              Chat with us on Instagram
+            </div>
             <Instagram className="h-6 w-6" />
           </motion.a>
 
@@ -63,7 +69,7 @@ export function RootLayout() {
             aria-label="Chat on WhatsApp"
           >
             <div className="absolute right-full mr-4 bg-white text-primary px-4 py-2 text-sm font-bold shadow-xl whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none border border-slate-100">
-              Chat with us now
+              Chat with us on WhatsApp
             </div>
             <svg 
               viewBox="0 0 24 24" 

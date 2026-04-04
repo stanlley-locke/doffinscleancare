@@ -59,7 +59,7 @@ export function HomePage() {
   return (
     <>
       <Helmet>
-        <title>Doffins CleanCare - #1 Premium Cleaning Services in Nairobi</title>
+        <title>Home | Doffins CleanCare</title>
         <meta name="description" content="Professional carpet, sofa, mattress cleaning and pest control services in Nairobi. Top-rated cleaning experts with same-day service. Get a free quote now!" />
         
         {/* Open Graph / Social SEO */}

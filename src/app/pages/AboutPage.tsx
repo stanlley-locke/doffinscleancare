@@ -7,7 +7,7 @@ export function AboutPage() {
   return (
     <>
       <Helmet>
-        <title>About Us - Doffins CleanCare | Our Story, Mission & Leadership</title>
+        <title>About Us | Doffins CleanCare</title>
         <meta name="description" content="Discover the journey of Doffins CleanCare from 2019 to becoming Kenya's trusted cleaning and pest control registered company Doffins & Co. Ltd." />
       </Helmet>
 
