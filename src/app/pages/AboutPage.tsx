@@ -7,8 +7,8 @@ export function AboutPage() {
   return (
     <>
       <Helmet>
-        <title>About Us | Doffins CleanCare</title>
-        <meta name="description" content="Discover the journey of Doffins CleanCare from 2019 to becoming Kenya's trusted cleaning and pest control registered company Doffins & Co. Ltd." />
+        <title>About Us | Professional Cleaning & Pest Control Excellence</title>
+        <meta name="description" content="Discover the journey of Doffins CleanCare since 2019, growing into Kenya's most trusted partner for professional cleaning and pest control. Registered company Doffins & Co. Ltd." />
         
         {/* JSON-LD Breadcrumbs */}
         <script type="application/ld+json">
@@ -82,21 +82,21 @@ export function AboutPage() {
                   Doffins CleanCare is a premier cleaning and pest control service provider in Kenya, dedicated to delivering exceptional results for both residential and commercial clients.
                 </p>
                 
-                <div className="relative pl-10 border-l border-slate-200 space-y-12 py-4">
+                <div className="relative pl-10 border-l-2 border-secondary/20 space-y-12 py-4">
                   <div className="relative">
-                    <div className="absolute -left-[45px] top-0 w-2.5 h-2.5 rounded-full bg-secondary ring-8 ring-secondary/10" />
+                    <div className="absolute -left-[46px] top-0 w-3 h-3 rounded-full bg-secondary ring-8 ring-secondary/10" />
                     <p>
                       Our journey began in <span className="font-bold text-primary">2019</span> as <span className="italic">Brute Force Cleaning Services and Pest Control</span>.
                     </p>
                   </div>
                   <div className="relative">
-                    <div className="absolute -left-[45px] top-0 w-2.5 h-2.5 rounded-full bg-secondary" />
+                    <div className="absolute -left-[46px] top-0 w-3 h-3 rounded-full bg-secondary shadow-[0_0_15px_rgba(212,164,69,0.5)]" />
                     <p>
                       In <span className="font-bold text-primary">2023</span>, we rebranded to <span className="italic">Novcare Cleaning and Pest Control</span> as we refined our services and redefined the customer experience.
                     </p>
                   </div>
                   <div className="relative">
-                    <div className="absolute -left-[45px] top-0 w-2.5 h-2.5 rounded-full bg-secondary ring-8 ring-secondary/20" />
+                    <div className="absolute -left-[46px] top-0 w-3 h-3 rounded-full bg-secondary ring-8 ring-secondary/20 shadow-[0_0_20px_rgba(212,164,69,0.3)]" />
                     <p>
                       In <span className="font-bold text-primary">2025</span>, we officially became a registered company—<span className="font-bold text-primary italic">Doffins & Co. Ltd</span>—marking a new chapter of professional excellence and rapid growth.
                     </p>
@@ -123,7 +123,7 @@ export function AboutPage() {
                 alt="Professional cleaning team at work"
                 className="w-full h-[600px] object-cover grayscale hover:grayscale-0 transition-all duration-1000 border border-slate-200"
               />
-              <div className="absolute top-10 right-10 bg-white p-8 border border-slate-100 shadow-2xl skew-y-3">
+              <div className="absolute top-10 right-10 bg-white p-8 border border-slate-300 shadow-2xl skew-y-3">
                 <p className="text-primary font-black text-6xl leading-none" style={{ fontFamily: "'Playfair Display', serif" }}>06+</p>
                 <p className="text-slate-400 font-bold uppercase tracking-widest text-sm mt-2">Years Excellence</p>
               </div>
@@ -137,7 +137,7 @@ export function AboutPage() {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
             <motion.div
-              className="group bg-white p-16 border border-slate-100 hover:border-primary transition-all relative overflow-hidden"
+              className="group bg-white p-16 border border-slate-300 border-t-4 border-t-primary hover:border-primary transition-all relative overflow-hidden hover:shadow-2xl hover:shadow-primary/5"
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
@@ -158,7 +158,7 @@ export function AboutPage() {
             </motion.div>
 
             <motion.div
-              className="group bg-white p-16 border border-slate-100 hover:border-secondary transition-all relative overflow-hidden"
+              className="group bg-white p-16 border border-slate-300 border-t-4 border-t-secondary hover:border-secondary transition-all relative overflow-hidden hover:shadow-2xl hover:shadow-secondary/5"
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
@@ -167,7 +167,7 @@ export function AboutPage() {
               <div className="absolute top-0 right-0 p-4 opacity-5 pointer-events-none group-hover:opacity-10 transition-opacity">
                 <Eye className="h-32 w-32 text-secondary" />
               </div>
-              <div className="h-16 w-16 bg-secondary/10 flex items-center justify-center text-secondary mb-10 group-hover:bg-secondary group-hover:text-primary transition-colors duration-500">
+              <div className="h-16 w-16 bg-secondary/10 flex items-center justify-center text-secondary mb-10 group-hover:bg-secondary group-hover:text-primary transition-colors duration-500 rounded-none">
                 <Eye className="h-8 w-8" />
               </div>
               <h3 className="text-3xl mb-6 font-bold" style={{ fontFamily: "'Playfair Display', serif" }}>
@@ -216,18 +216,18 @@ export function AboutPage() {
             ].map((leader, idx) => (
               <motion.div
                 key={idx}
-                className="group border border-slate-100 hover:border-primary transition-all p-12 relative"
+                className="group border border-slate-300 border-t-4 border-t-secondary/30 hover:border-secondary transition-all p-12 relative bg-white hover:shadow-2xl hover:shadow-secondary/5"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: idx * 0.1 }}
               >
                 <div className="flex items-start gap-8">
-                  <div className="h-24 w-24 bg-primary/5 flex items-center justify-center text-primary border border-primary/10 shrink-0 group-hover:bg-primary group-hover:text-white transition-colors duration-500">
+                  <div className="h-24 w-24 bg-secondary/5 flex items-center justify-center text-secondary border border-secondary/10 shrink-0 group-hover:bg-secondary group-hover:text-primary transition-colors duration-500">
                     <User className="h-10 w-10" strokeWidth={1} />
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold mb-2 group-hover:text-primary transition-colors" style={{ fontFamily: "'Playfair Display', serif" }}>
+                    <h3 className="text-2xl font-bold mb-2 group-hover:text-secondary transition-colors" style={{ fontFamily: "'Playfair Display', serif" }}>
                       {leader.name}
                     </h3>
                     <p className="text-secondary font-bold uppercase tracking-widest text-xs mb-6 px-3 py-1 border border-secondary/20 inline-block">
@@ -286,13 +286,13 @@ export function AboutPage() {
             ].map((benefit, idx) => (
               <motion.div
                 key={idx}
-                className="bg-white p-10 border border-slate-100 hover:border-secondary transition-all hover:shadow-2xl hover:shadow-primary/5 text-center group"
+                className="bg-white p-10 border border-slate-300 border-t-4 border-t-secondary/20 hover:border-secondary transition-all hover:shadow-2xl hover:shadow-secondary/10 text-center group"
                 initial={{ opacity: 0, scale: 0.95 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: idx * 0.1 }}
               >
-                <div className="inline-flex items-center justify-center w-20 h-20 bg-primary/5 text-primary mb-8 group-hover:bg-primary group-hover:text-white transition-colors duration-500">
+                <div className="inline-flex items-center justify-center w-20 h-20 bg-secondary/10 text-secondary mb-8 group-hover:bg-secondary group-hover:text-primary transition-colors duration-500">
                   {benefit.icon}
                 </div>
                 <h3 className="text-2xl mb-4 font-bold" style={{ fontFamily: "'Playfair Display', serif" }}>

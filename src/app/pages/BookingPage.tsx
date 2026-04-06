@@ -67,8 +67,8 @@ export function BookingPage() {
   return (
     <>
       <Helmet>
-        <title>Book Now | Doffins CleanCare</title>
-        <meta name="description" content="Secure your professional cleaning or pest control service in Nairobi. Fill out our quick booking form for an instant quote." />
+        <title>Book Your Service | Professional Cleaning & Pest Control Excellence</title>
+        <meta name="description" content="Instant booking for carpet, sofa, mattress, and deep cleaning services by Doffins CleanCare. Secure your professional cleaning slot in Kenya today. Registered company Doffins & Co. Ltd. 100% Satisfaction Guaranteed." />
         
         {/* JSON-LD Breadcrumbs */}
         <script type="application/ld+json">
@@ -132,7 +132,7 @@ export function BookingPage() {
             {/* Form Column */}
             <div className="lg:col-span-7">
               <motion.div
-                className="bg-white p-10 lg:p-16 border border-slate-100 shadow-2xl shadow-primary/5"
+                className="bg-white p-10 lg:p-16 border border-slate-300 border-t-8 border-t-secondary shadow-2xl shadow-primary/10 relative"
                 initial={{ opacity: 0, x: -30 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
@@ -141,7 +141,7 @@ export function BookingPage() {
                 {!isSubmitted ? (
                   <form onSubmit={handleSubmit} className="grid sm:grid-cols-2 gap-8">
                     <div className="space-y-2">
-                      <label className="text-xs uppercase tracking-widest font-bold text-slate-400">Full Name</label>
+                      <label className="text-xs uppercase tracking-widest font-bold text-slate-400">Full Name <span className="text-secondary">*</span></label>
                       <input
                         type="text"
                         name="name"
@@ -149,12 +149,12 @@ export function BookingPage() {
                         onChange={handleChange}
                         required
                         placeholder="James Mwangi"
-                        className="w-full px-6 py-4 bg-slate-50 border-0 focus:ring-2 focus:ring-primary focus:bg-white transition-all outline-none font-medium"
+                        className="w-full px-6 py-4 bg-slate-50 border border-slate-300 focus:ring-2 focus:ring-secondary/20 focus:border-secondary focus:bg-white transition-all outline-none font-medium rounded-none"
                       />
                     </div>
 
                     <div className="space-y-2">
-                      <label className="text-xs uppercase tracking-widest font-bold text-slate-400">Email Address</label>
+                      <label className="text-xs uppercase tracking-widest font-bold text-slate-400">Email Address <span className="text-secondary">*</span></label>
                       <input
                         type="email"
                         name="email"
@@ -162,12 +162,12 @@ export function BookingPage() {
                         onChange={handleChange}
                         required
                         placeholder="james.mwangi@gmail.com"
-                        className="w-full px-6 py-4 bg-slate-50 border-0 focus:ring-2 focus:ring-primary focus:bg-white transition-all outline-none font-medium"
+                        className="w-full px-6 py-4 bg-slate-50 border border-slate-300 focus:ring-2 focus:ring-secondary/20 focus:border-secondary focus:bg-white transition-all outline-none font-medium rounded-none"
                       />
                     </div>
 
                     <div className="space-y-2">
-                      <label className="text-xs uppercase tracking-widest font-bold text-slate-400">Phone Number</label>
+                      <label className="text-xs uppercase tracking-widest font-bold text-slate-400">Phone Number <span className="text-secondary">*</span></label>
                       <input
                         type="tel"
                         name="phone"
@@ -175,18 +175,18 @@ export function BookingPage() {
                         onChange={handleChange}
                         required
                         placeholder="0704 470 840"
-                        className="w-full px-6 py-4 bg-slate-50 border-0 focus:ring-2 focus:ring-primary focus:bg-white transition-all outline-none font-medium"
+                        className="w-full px-6 py-4 bg-slate-50 border border-slate-300 focus:ring-2 focus:ring-secondary/20 focus:border-secondary focus:bg-white transition-all outline-none font-medium rounded-none"
                       />
                     </div>
 
                     <div className="space-y-2">
-                      <label className="text-xs uppercase tracking-widest font-bold text-slate-400">Preferred Service</label>
+                      <label className="text-xs uppercase tracking-widest font-bold text-slate-400">Preferred Service <span className="text-secondary">*</span></label>
                       <select
                         name="service"
                         value={formData.service}
                         onChange={handleChange}
                         required
-                        className="w-full px-6 py-4 bg-slate-50 border-0 focus:ring-2 focus:ring-primary focus:bg-white transition-all outline-none font-medium appearance-none"
+                        className="w-full px-6 py-4 bg-slate-50 border border-slate-300 focus:ring-2 focus:ring-secondary/20 focus:border-secondary focus:bg-white transition-all outline-none font-medium appearance-none rounded-none"
                       >
                         <option value="">Select a service...</option>
                         <option value="Carpet Cleaning">Carpet Cleaning</option>
@@ -200,7 +200,7 @@ export function BookingPage() {
                     </div>
 
                     <div className="sm:col-span-2 space-y-2">
-                      <label className="text-xs uppercase tracking-widest font-bold text-slate-400">Service Location (Nairobi & Env)</label>
+                      <label className="text-xs uppercase tracking-widest font-bold text-slate-400">Service Location <span className="text-secondary">*</span></label>
                       <input
                         type="text"
                         name="location"
@@ -208,7 +208,7 @@ export function BookingPage() {
                         onChange={handleChange}
                         required
                         placeholder="e.g. Westlands, Kilimani, Runda"
-                        className="w-full px-6 py-4 bg-slate-50 border-0 focus:ring-2 focus:ring-primary focus:bg-white transition-all outline-none font-medium"
+                        className="w-full px-6 py-4 bg-slate-50 border border-slate-200 focus:ring-2 focus:ring-secondary/20 focus:border-secondary focus:bg-white transition-all outline-none font-medium rounded-none"
                       />
                     </div>
 
@@ -220,7 +220,7 @@ export function BookingPage() {
                         onChange={handleChange}
                         rows={4}
                         placeholder="Number of items, approximate size, or any specific stains/concerns..."
-                        className="w-full px-6 py-4 bg-slate-50 border-0 focus:ring-2 focus:ring-primary focus:bg-white transition-all outline-none resize-none font-medium"
+                        className="w-full px-6 py-4 bg-slate-50 border border-slate-300 focus:ring-2 focus:ring-secondary/20 focus:border-secondary focus:bg-white transition-all outline-none resize-none font-medium rounded-none"
                       />
                     </div>
 
@@ -228,7 +228,7 @@ export function BookingPage() {
                       <button
                         type="submit"
                         disabled={isSubmitting}
-                        className="w-full bg-primary hover:bg-secondary text-white hover:text-primary font-black py-6 transition-all shadow-xl shadow-primary/20 flex items-center justify-center gap-4 group uppercase tracking-widest disabled:bg-slate-100 disabled:text-slate-400"
+                        className="w-full bg-primary hover:bg-secondary text-white hover:text-primary font-black py-7 transition-all shadow-xl shadow-primary/20 hover:shadow-secondary/20 flex items-center justify-center gap-4 group uppercase tracking-[0.2em] text-sm disabled:bg-slate-100 disabled:text-slate-400"
                       >
                         {isSubmitting ? 'SECURING SLOT...' : 'CONFIRM BOOKING'}
                         {!isSubmitting && <Send className="h-5 w-5 group-hover:translate-x-1 transition-transform" />}
@@ -269,7 +269,7 @@ export function BookingPage() {
                     { t: "Secure Slot", d: "Reserving via our form ensures your preferred time is noted immediately.", i: <CheckCircle className="text-secondary" /> }
                   ].map((item, i) => (
                     <div key={i} className="flex gap-6">
-                      <div className="h-12 w-12 bg-slate-50 flex items-center justify-center shrink-0">
+                      <div className="h-12 w-12 bg-white flex items-center justify-center shrink-0 border border-slate-300 shadow-sm">
                         {item.i}
                       </div>
                       <div>
@@ -282,7 +282,7 @@ export function BookingPage() {
               </motion.div>
 
               <motion.div
-                className="bg-slate-50 p-10"
+                className="bg-white p-10 border border-slate-300 shadow-xl shadow-primary/5"
                 initial={{ opacity: 0, x: 30 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
@@ -328,7 +328,7 @@ export function BookingPage() {
 
           <div className="grid md:grid-cols-4 gap-8 max-w-6xl mx-auto relative">
             {/* Visual connector line for desktop */}
-            <div className="hidden md:block absolute top-[60px] left-0 w-full h-[1px] bg-slate-200 -z-10" />
+            <div className="hidden md:block absolute top-[60px] left-0 w-full h-[2px] bg-secondary/20 shadow-[0_0_10px_rgba(212,164,69,0.1)] -z-10" />
             
             {[
               { t: "Request Quote", d: "Fill out our form or send a WhatsApp for a quick estimate.", i: "01" },
@@ -344,12 +344,12 @@ export function BookingPage() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.8, delay: idx * 0.1 }}
               >
-                <div className="h-16 w-16 bg-white border-2 border-primary mx-auto mb-8 flex items-center justify-center font-black text-primary group-hover:bg-primary group-hover:text-white transition-all duration-500 rounded-full">
+                <div className="h-16 w-16 bg-white border-2 border-secondary mx-auto mb-8 flex items-center justify-center font-black text-secondary group-hover:bg-secondary group-hover:text-primary transition-all duration-500 rounded-full shadow-lg shadow-secondary/10">
                   {step.i}
                 </div>
                 <h3 className="text-xl font-bold mb-4 tracking-tight" style={{ fontFamily: "'Playfair Display', serif" }}>{step.t}</h3>
                 <p className="text-slate-500 text-sm leading-relaxed">{step.d}</p>
-                <div className="mt-8 w-8 h-1 bg-secondary mx-auto opacity-0 group-hover:opacity-100 transition-opacity" />
+                <div className="mt-8 w-8 h-1 bg-secondary/30 mx-auto group-hover:w-20 group-hover:bg-secondary transition-all duration-500" />
               </motion.div>
             ))}
           </div>
@@ -382,14 +382,14 @@ export function BookingPage() {
               },
               {
                 q: "How soon can I get a slot?",
-                a: "We often have same-day or next-day slots available in Nairobi. However, booking 2-3 days in advance ensures you get your preferred time."
+                a: "We often have same-day or next-day slots available across our service areas. However, booking 2-3 days in advance ensures you get your preferred time."
               },
               {
                 q: "What if I need to cancel or reschedule?",
                 a: "Life happens! We offer free rescheduling up to 24 hours before your session. Just give us a call or WhatsApp."
               }
             ].map((faq, idx) => (
-              <div key={idx} className="bg-white p-8 border border-slate-100 hover:border-primary/20 transition-all">
+              <div key={idx} className="bg-white p-8 border border-slate-300 shadow-md shadow-primary/5 hover:border-primary/20 transition-all">
                 <h4 className="text-xl font-bold mb-4 tracking-tight" style={{ fontFamily: "'Playfair Display', serif" }}>{faq.q}</h4>
                 <p className="text-slate-500 leading-relaxed font-light">{faq.a}</p>
               </div>

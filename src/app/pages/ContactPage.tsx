@@ -65,30 +65,12 @@ export function ContactPage() {
   return (
     <>
       <Helmet>
-        <title>Contact Us | Doffins CleanCare</title>
-        <meta name="description" content="Contact Doffins CleanCare for professional cleaning and pest control services. Call 0704 470 840, email doffinscoltd@gmail.com, or book online. Nairobi, Kenya." />
+        <title>Contact Us | Professional Cleaning & Pest Control Excellence</title>
+        <meta name="description" content="Get in touch with Kenya's trusted cleaning and pest control experts. Same-day service available across the country. Registered company Doffins & Co. Ltd." />
         
-        {/* JSON-LD Contact & Breadcrumbs */}
+        {/* JSON-LD Schema for Contact Page */}
         <script type="application/ld+json">
           {JSON.stringify([
-            {
-              "@context": "https://schema.org",
-              "@type": "ContactPage",
-              "name": "Contact Doffins CleanCare",
-              "description": "Get in touch with Nairobi's premier cleaning specialists.",
-              "mainEntity": {
-                "@type": "Organization",
-                "name": "Doffins & Co. Ltd",
-                "telephone": "+254704470840",
-                "email": "doffinscoltd@gmail.com",
-                "address": {
-                  "@type": "PostalAddress",
-                  "streetAddress": "Nairobi CBD",
-                  "addressLocality": "Nairobi",
-                  "addressCountry": "KE"
-                }
-              }
-            },
             {
               "@context": "https://schema.org",
               "@type": "BreadcrumbList",
@@ -102,10 +84,31 @@ export function ContactPage() {
                 {
                   "@type": "ListItem",
                   "position": 2,
-                  "name": "Contact",
+                  "name": "Contact Us",
                   "item": "https://doffinscleancare.co.ke/contact"
                 }
               ]
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "ContactPage",
+              "name": "Contact Doffins CleanCare",
+              "description": "Get in touch with Kenya's premier cleaning specialists.",
+              "mainEntity": {
+                "@type": "Organization",
+                "name": "Doffins & Co. Ltd",
+                "telephone": "+254704470840",
+                "email": "doffinscoltd@gmail.com",
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressLocality": "Kenya",
+                  "addressCountry": "KE"
+                },
+                "sameAs": [
+                  "https://www.facebook.com/share/18CAEMDG1J/",
+                  "https://www.instagram.com/doffins_carpet_care"
+                ]
+              }
             }
           ])}
         </script>
@@ -160,7 +163,7 @@ export function ContactPage() {
                 
                 <div className="space-y-12">
                   <div className="flex items-start gap-6 group">
-                    <div className="h-14 w-14 bg-primary/5 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all duration-500 shrink-0">
+                    <div className="h-14 w-14 bg-white flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all duration-500 shrink-0 border border-slate-300 shadow-sm">
                       <Phone className="h-6 w-6" />
                     </div>
                     <div>
@@ -171,7 +174,7 @@ export function ContactPage() {
                   </div>
 
                   <div className="flex items-start gap-6 group">
-                    <div className="h-14 w-14 bg-primary/5 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all duration-500 shrink-0">
+                    <div className="h-14 w-14 bg-white flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all duration-500 shrink-0 border border-slate-300 shadow-sm">
                       <Mail className="h-6 w-6" />
                     </div>
                     <div>
@@ -181,20 +184,20 @@ export function ContactPage() {
                   </div>
 
                   <div className="flex items-start gap-6 group">
-                    <div className="h-14 w-14 bg-primary/5 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all duration-500 shrink-0">
+                    <div className="h-14 w-14 bg-white flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all duration-500 shrink-0 border border-slate-300 shadow-sm">
                       <MapPin className="h-6 w-6" />
                     </div>
                     <div>
                       <p className="text-xs uppercase tracking-widest text-slate-400 font-bold mb-2">Location</p>
-                      <p className="text-xl font-bold text-slate-700">Nairobi, Kenya</p>
-                      <p className="text-slate-500 font-light mt-1 italic leading-tight">Serving Nairobi & surrounding areas</p>
+                      <p className="text-xl font-bold text-slate-700">Kenya</p>
+                      <p className="text-slate-500 font-light mt-1 italic leading-tight">Serving homes and businesses across Kenya</p>
                     </div>
                   </div>
                 </div>
               </motion.div>
 
               <motion.div
-                className="bg-slate-50 p-12 relative"
+                className="bg-white p-12 relative border border-slate-300 shadow-xl shadow-primary/5"
                 initial={{ opacity: 0, x: -30 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
@@ -228,7 +231,7 @@ export function ContactPage() {
             {/* Form Column */}
             <div className="lg:col-span-7">
               <motion.div
-                className="bg-white p-12 border border-slate-100 shadow-2xl shadow-primary/5 relative"
+                className="bg-white p-12 lg:p-16 border border-slate-300 border-t-8 border-t-secondary shadow-2xl shadow-primary/10 relative"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -265,14 +268,16 @@ export function ContactPage() {
                   <form onSubmit={handleSubmit} className="space-y-8">
                     <div className="grid sm:grid-cols-2 gap-8">
                       <div className="space-y-3">
-                        <label className="text-[10px] uppercase tracking-widest text-slate-400 font-bold block">Full Name</label>
+                        <label className="text-[10px] uppercase tracking-widest text-slate-400 font-bold block mb-1">
+                          Full Name <span className="text-secondary">*</span>
+                        </label>
                         <input
                           type="text"
                           name="name"
                           required
                           value={formData.name}
                           onChange={handleChange}
-                          className="w-full bg-slate-50 border border-slate-100 p-4 text-slate-800 focus:border-primary outline-none transition-all placeholder:text-slate-300 rounded-sm"
+                          className="w-full bg-slate-50 border border-slate-300 p-4 text-slate-800 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition-all placeholder:text-slate-300 rounded-none"
                           placeholder="Your Full Name"
                         />
                       </div>
@@ -284,7 +289,7 @@ export function ContactPage() {
                           required
                           value={formData.email}
                           onChange={handleChange}
-                          className="w-full bg-slate-50 border border-slate-100 p-4 text-slate-800 focus:border-primary outline-none transition-all placeholder:text-slate-300 rounded-sm"
+                          className="w-full bg-slate-50 border border-slate-300 p-4 text-slate-800 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition-all placeholder:text-slate-300 rounded-none"
                           placeholder="your.email@gmail.com"
                         />
                       </div>
@@ -299,7 +304,7 @@ export function ContactPage() {
                           required
                           value={formData.phone}
                           onChange={handleChange}
-                          className="w-full bg-slate-50 border border-slate-100 p-4 text-slate-800 focus:border-primary outline-none transition-all placeholder:text-slate-300 rounded-sm"
+                          className="w-full bg-slate-50 border border-slate-300 p-4 text-slate-800 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition-all placeholder:text-slate-300 rounded-none"
                           placeholder="0704 470 840"
                         />
                       </div>
@@ -310,7 +315,7 @@ export function ContactPage() {
                           required
                           value={formData.service}
                           onChange={handleChange}
-                          className="w-full bg-slate-50 border border-slate-100 p-4 text-slate-800 focus:border-primary outline-none transition-all rounded-sm"
+                          className="w-full bg-slate-50 border border-slate-300 p-4 text-slate-800 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition-all rounded-none"
                         >
                           <option value="">Select a service...</option>
                           <option value="Carpet Cleaning">Carpet Cleaning</option>
@@ -332,7 +337,7 @@ export function ContactPage() {
                         value={formData.location}
                         onChange={handleChange}
                         className="w-full bg-slate-50 border border-slate-100 p-4 text-slate-800 focus:border-primary outline-none transition-all placeholder:text-slate-300 rounded-sm"
-                        placeholder="Westlands, Nairobi"
+                        placeholder="e.g. Westlands, or Your City"
                       />
                     </div>
 
@@ -343,7 +348,7 @@ export function ContactPage() {
                         rows={5}
                         value={formData.message}
                         onChange={handleChange}
-                        className="w-full bg-slate-50 border border-slate-100 p-4 text-slate-800 focus:border-primary outline-none transition-all placeholder:text-slate-300 rounded-sm resize-none"
+                        className="w-full bg-slate-50 border border-slate-300 p-4 text-slate-800 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition-all placeholder:text-slate-300 rounded-none resize-none"
                         placeholder="Number of items, size, special requirements, etc."
                       />
                     </div>
@@ -351,7 +356,7 @@ export function ContactPage() {
                     <button
                       type="submit"
                       disabled={isSubmitting}
-                      className="w-full bg-primary hover:bg-secondary text-white hover:text-primary font-black py-6 transition-all flex items-center justify-center gap-4 group tracking-tight disabled:bg-slate-100 disabled:text-slate-400"
+                      className="w-full bg-primary hover:bg-secondary text-white hover:text-primary font-black py-7 transition-all flex items-center justify-center gap-4 group tracking-widest disabled:bg-slate-100 disabled:text-slate-400 shadow-xl shadow-primary/10 hover:shadow-secondary/20"
                     >
                       {isSubmitting ? 'SENDING REQUEST...' : 'SEND REQUEST'}
                       {!isSubmitting && <Send className="h-5 w-5 group-hover:translate-x-1 transition-transform" />}
@@ -392,7 +397,7 @@ export function ContactPage() {
             ].map((step, i) => (
               <motion.div
                 key={i}
-                className="bg-white p-12 hover:border-secondary border border-transparent transition-all group"
+                className="bg-white p-12 border border-slate-300 shadow-xl shadow-primary/5 hover:border-secondary transition-all group"
                 initial={{ opacity: 0, scale: 0.95 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}

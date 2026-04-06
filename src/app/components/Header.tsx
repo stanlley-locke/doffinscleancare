@@ -51,7 +51,7 @@ export function Header() {
       <div className="container mx-auto px-6 md:px-12">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center group relative z-[110]">
-            <div className="relative overflow-hidden rounded-md bg-white p-1 shadow-xl shadow-primary/5 transition-all duration-500 group-hover:scale-110">
+            <div className="relative overflow-hidden rounded-md bg-white p-1 shadow-xl shadow-secondary/10 transition-all duration-500 group-hover:scale-110 group-hover:shadow-secondary/20">
               <img src="/doffinslogo.png" alt="Doffins CleanCare" className="h-10 md:h-12 w-auto" />
             </div>
             <div className="ml-4 flex flex-col">
@@ -90,8 +90,8 @@ export function Header() {
               to="/book"
               className={`px-10 py-4 font-black uppercase tracking-[0.2em] text-[10px] transition-all duration-300 hover:scale-105 active:scale-95 shadow-2xl ${
                 shouldShowTransparent 
-                  ? 'bg-secondary text-primary hover:bg-white shadow-secondary/20' 
-                  : 'bg-primary text-secondary hover:bg-black shadow-primary/20'
+                  ? 'bg-secondary text-primary hover:bg-white shadow-secondary/30' 
+                  : 'bg-secondary text-primary hover:bg-black hover:text-white shadow-secondary/20'
               }`}
             >
               Get a Quote
@@ -174,7 +174,7 @@ export function Header() {
                 </Link>
                 
                 <div className="mt-12 flex items-center justify-center gap-8 text-white/20 text-[10px] font-black uppercase tracking-[0.2em]">
-                   <span>Nairobi, Kenya</span>
+                   <span>Serving Kenya</span>
                    <div className="h-1 w-1 bg-secondary rounded-full" />
                    <span>Quality Guaranteed</span>
                 </div>

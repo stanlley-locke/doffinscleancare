@@ -9,7 +9,7 @@ function FAQItem({ question, answer }: { question: string, answer: string }) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="border-b border-slate-100 last:border-0 hover:bg-slate-50 transition-colors">
+    <div className="border-b border-slate-200 last:border-0 hover:bg-slate-50 transition-colors">
       <button 
         className="w-full py-6 flex items-center justify-between text-left group"
         onClick={() => setIsOpen(!isOpen)}
@@ -17,7 +17,7 @@ function FAQItem({ question, answer }: { question: string, answer: string }) {
         <span className={`text-xl font-bold tracking-tight transition-colors ${isOpen ? 'text-primary' : 'text-slate-700'}`} style={{ fontFamily: "'Playfair Display', serif" }}>
           {question}
         </span>
-        <div className={`p-2 rounded-full border border-slate-100 group-hover:border-primary/20 transition-all ${isOpen ? 'bg-primary text-white border-primary' : 'text-slate-400'}`}>
+        <div className={`p-2 rounded-full border border-slate-200 group-hover:border-secondary transition-all ${isOpen ? 'bg-secondary text-primary border-secondary' : 'text-slate-400'}`}>
           <ChevronDown className={`h-5 w-5 transition-transform duration-500 ${isOpen ? 'rotate-180' : ''}`} />
         </div>
       </button>
@@ -30,7 +30,7 @@ function FAQItem({ question, answer }: { question: string, answer: string }) {
             transition={{ duration: 0.4, ease: [0.04, 0.62, 0.23, 0.98] }}
             className="overflow-hidden"
           >
-            <div className="pb-8 pr-12 text-slate-500 leading-relaxed text-lg font-light">
+            <div className="pb-8 pr-12 text-slate-500 leading-relaxed text-lg font-light border-l-2 border-secondary/30 ml-2 pl-6">
               {answer}
             </div>
           </motion.div>
@@ -59,13 +59,13 @@ export function HomePage() {
   return (
     <>
       <Helmet>
-        <title>Doffins CleanCare | Professional Cleaning & Pest Control Nairobi</title>
-        <meta name="description" content="Nairobi's most trusted partner for professional carpet, sofa, mattress cleaning, and pest control. Registered company Doffins & Co. Ltd. Restore freshness to your space today." />
+        <title>Doffins CleanCare | Professional Cleaning & Pest Control Excellence</title>
+        <meta name="description" content="Kenya's most trusted partner for professional carpet, sofa, mattress cleaning, and pest control. Registered company Doffins & Co. Ltd. Restore freshness to your space today." />
         
         {/* Open Graph / Social SEO */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Doffins CleanCare | Professional Cleaning Nairobi" />
-        <meta property="og:description" content="Nairobi's most trusted partner for deep cleaning and pest control. Restore freshness to your space today." />
+        <meta property="og:title" content="Doffins CleanCare | Professional Cleaning & Pest Control" />
+        <meta property="og:description" content="Kenya's most trusted partner for deep cleaning and pest control. Restore freshness to your space today." />
         <meta property="og:image" content="https://images.unsplash.com/photo-1759722665623-c4c1075c0a6b?q=80&w=1200" />
         <meta property="og:url" content="https://doffinscleancare.co.ke" />
 
@@ -93,6 +93,7 @@ export function HomePage() {
                 "latitude": -1.286389,
                 "longitude": 36.817223
               },
+              "hasMap": "https://www.google.com/maps/search/Doffins+CleanCare+Nairobi",
               "openingHoursSpecification": [
                 {
                   "@type": "OpeningHoursSpecification",
@@ -108,8 +109,8 @@ export function HomePage() {
                 }
               ],
               "sameAs": [
-                "https://facebook.com/doffinscleancare",
-                "https://instagram.com/doffinscleancare"
+                "https://www.facebook.com/share/18CAEMDG1J/",
+                "https://www.instagram.com/doffins_carpet_care"
               ]
             },
             {
@@ -124,7 +125,11 @@ export function HomePage() {
                 "contactType": "customer service",
                 "areaServed": "KE",
                 "availableLanguage": "English"
-              }
+              },
+              "sameAs": [
+                "https://www.facebook.com/share/18CAEMDG1J/",
+                "https://www.instagram.com/doffins_carpet_care"
+              ]
             },
             {
               "@context": "https://schema.org",
@@ -136,6 +141,43 @@ export function HomePage() {
                 "target": "https://doffinscleancare.co.ke/services?q={search_term_string}",
                 "query-input": "required name=search_term_string"
               }
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "ItemList",
+              "name": "Main Navigation",
+              "itemListElement": [
+                {
+                  "@type": "SiteNavigationElement",
+                  "position": 1,
+                  "name": "About Us",
+                  "url": "https://doffinscleancare.co.ke/about"
+                },
+                {
+                  "@type": "SiteNavigationElement",
+                  "position": 2,
+                  "name": "Services",
+                  "url": "https://doffinscleancare.co.ke/services"
+                },
+                {
+                  "@type": "SiteNavigationElement",
+                  "position": 3,
+                  "name": "Pricing",
+                  "url": "https://doffinscleancare.co.ke/pricing"
+                },
+                {
+                  "@type": "SiteNavigationElement",
+                  "position": 4,
+                  "name": "Contact",
+                  "url": "https://doffinscleancare.co.ke/contact"
+                },
+                {
+                  "@type": "SiteNavigationElement",
+                  "position": 5,
+                  "name": "Book Now",
+                  "url": "https://doffinscleancare.co.ke/book"
+                }
+              ]
             },
             {
               "@context": "https://schema.org",
@@ -173,7 +215,7 @@ export function HomePage() {
             >
               <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl mb-8 leading-[1.1] tracking-tight shadow-black/20 text-shadow-lg" style={{ fontFamily: "'Playfair Display', serif" }}>
                 Premium Cleaning <br className="hidden sm:block" />
-                <span className="text-secondary italic">Services in Nairobi</span>
+                <span className="text-secondary italic">Services in Kenya</span>
               </h1>
               <p className="text-lg md:text-2xl text-white/90 mb-12 max-w-2xl mx-auto leading-relaxed font-light px-4">
                 Professional carpet, sofa, mattress cleaning and pest control solutions delivered with a 100% satisfaction guarantee.
@@ -267,7 +309,7 @@ export function HomePage() {
               },
               {
                 title: "Trusted by Homes & Businesses",
-                desc: "We serve both residential and commercial clients across Nairobi.",
+                desc: "We serve both residential and commercial clients across Kenya.",
                 icon: <ShieldCheck strokeWidth={1.5} className="h-7 w-7" />
               },
               {
@@ -278,7 +320,7 @@ export function HomePage() {
             ].map((feature, idx) => (
               <motion.div
                 key={idx}
-                className="group p-10 bg-white border border-slate-100 hover:border-secondary transition-all hover:shadow-2xl hover:shadow-primary/5 relative"
+                className="group p-10 bg-white border border-slate-300 border-t-4 hover:border-secondary transition-all hover:shadow-2xl hover:shadow-secondary/10 relative"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -287,8 +329,8 @@ export function HomePage() {
                 <div className="absolute top-0 right-0 p-2 text-slate-50 font-black text-6xl select-none group-hover:text-secondary/10 transition-colors">
                   0{idx + 1}
                 </div>
-                <div className="h-16 w-16 bg-primary/5 flex items-center justify-center mb-8 group-hover:bg-primary transition-colors duration-300">
-                  <div className="text-primary group-hover:text-white transition-colors duration-300">
+                <div className="h-16 w-16 bg-secondary/10 flex items-center justify-center mb-8 group-hover:bg-secondary transition-colors duration-300">
+                  <div className="text-secondary group-hover:text-primary transition-colors duration-300">
                     {feature.icon}
                   </div>
                 </div>
@@ -331,7 +373,7 @@ export function HomePage() {
               services.map((service, idx) => (
                 <motion.div
                   key={service.id}
-                  className="group bg-white rounded-none overflow-hidden border border-slate-200 hover:border-secondary transition-all"
+                  className="group bg-white rounded-none overflow-hidden border border-slate-300 border-t-4 border-t-secondary/20 hover:border-secondary hover:border-t-secondary transition-all hover:shadow-2xl hover:shadow-secondary/5"
                   initial={{ opacity: 0, scale: 0.95 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
@@ -407,11 +449,11 @@ export function HomePage() {
             {[
               {
                 q: "What areas do you serve?",
-                a: "We provide cleaning and pest control services throughout Nairobi and surrounding areas including Westlands, Kilimani, Lavington, Karen, Runda, and more. Contact us to confirm service availability in your location."
+                a: "We provide cleaning and pest control services throughout Kenya including Nairobi, Kiambu, Machakos, and surrounding regions. Contact us to confirm service availability in your specific location."
               },
               {
                 q: "How quickly can you provide service?",
-                a: "We pride ourselves on our responsiveness and offer same-day service for most cleaning and pest control requests in the Nairobi metropolitan area. Call us early for the best availability."
+                a: "We pride ourselves on our responsiveness and offer same-day service for most cleaning and pest control requests in our core service areas. Call us early for the best availability."
               },
               {
                 q: "Are your cleaning products safe?",
@@ -478,13 +520,13 @@ export function HomePage() {
             ].map((testimonial, idx) => (
               <motion.div
                 key={idx}
-                className="bg-white p-10 relative border border-slate-100 hover:border-secondary transition-all hover:shadow-2xl hover:shadow-primary/5"
+                className="bg-white p-10 relative border border-slate-200 border-l-4 border-l-secondary/40 hover:border-l-secondary transition-all hover:shadow-2xl hover:shadow-secondary/10"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: idx * 0.1 }}
               >
-                <Quote className="absolute top-8 right-8 h-10 w-10 text-slate-50" />
+                <Quote className="absolute top-8 right-8 h-10 w-10 text-secondary/10 group-hover:text-secondary/20 transition-colors" />
                 <div className="flex gap-1 mb-6">
                   {Array.from({ length: testimonial.stars }).map((_, i) => (
                     <Star key={i} className="h-4 w-4 fill-secondary text-secondary" />

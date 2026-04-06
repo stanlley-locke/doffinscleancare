@@ -30,8 +30,8 @@ export function ServicesPage() {
   return (
     <>
       <Helmet>
-        <title>Our Services | Doffins CleanCare </title>
-        <meta name="description" content="View our full range of cleaning and pest control services in Nairobi. From carpet and sofa cleaning to deep house and commercial cleaning." />
+        <title>Our Services | Professional Cleaning & Pest Control Excellence</title>
+        <meta name="description" content="Premium services: Professional carpet, sofa, mattress, and deep house cleaning across Kenya. Pest control and fumigation by Doffins CleanCare experts." />
         
         {/* JSON-LD Breadcrumbs */}
         <script type="application/ld+json">
@@ -102,7 +102,7 @@ export function ServicesPage() {
                     transition={{ duration: 0.8 }}
                   >
                     <div className="flex items-center gap-4 mb-8">
-                      <div className="h-14 w-14 bg-primary/5 flex items-center justify-center text-primary border border-primary/10">
+                      <div className="h-14 w-14 bg-secondary/10 flex items-center justify-center text-secondary border border-secondary/10 group-hover:bg-secondary group-hover:text-primary transition-colors duration-500">
                         <Sparkles className="h-7 w-7" />
                       </div>
                       <h2 className="text-4xl lg:text-5xl font-bold" style={{ fontFamily: "'Playfair Display', serif" }}>
@@ -112,7 +112,7 @@ export function ServicesPage() {
                     
                     <div className="mb-6 flex items-baseline gap-2">
                       <span className="text-sm text-slate-400 font-medium">Starting from</span>
-                      <span className="text-2xl font-black text-primary">
+                      <span className="text-3xl font-black text-secondary">
                         {service.startingPrice === 0 ? "Custom Quote" : `KES ${service.startingPrice.toLocaleString()}`}
                       </span>
                       {service.startingPrice !== 0 && (
@@ -146,11 +146,11 @@ export function ServicesPage() {
                     viewport={{ once: true }}
                     transition={{ duration: 0.8 }}
                   >
-                    <div className={`absolute ${IsEven ? '-top-6 -right-6' : '-bottom-6 -left-6'} w-full h-full border-2 border-secondary/20 -z-10`} />
+                    <div className={`absolute ${IsEven ? '-top-6 -right-6' : '-bottom-6 -left-6'} w-full h-full border-4 border-secondary/30 -z-10 bg-secondary/5 shadow-2xl shadow-secondary/10 transition-all duration-700 group-hover:scale-105`} />
                     <ImageWithFallback
                       src={service.imageUrl || "https://images.unsplash.com/photo-1581578731522-745a05ad9ad2?q=80&w=1080"}
                       alt={service.displayName}
-                      className="w-full aspect-[4/3] object-cover border border-slate-100"
+                      className="w-full aspect-[4/3] object-cover border border-slate-300 shadow-xl shadow-secondary/5 hover:border-secondary transition-colors duration-500"
                     />
                   </motion.div>
                 </div>

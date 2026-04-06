@@ -10,11 +10,11 @@ export function RootLayout() {
   return (
     <>
       <Helmet>
-        <title>Doffins CleanCare | Premium Cleaning Services in Nairobi, Kenya</title>
-        <meta name="description" content="Professional cleaning and pest control services in Nairobi for residential and commercial customers." />
-        <meta name="keywords" content="carpet cleaning Nairobi, sofa cleaning Kenya, mattress cleaning, pest control, fumigation services, deep cleaning, office cleaning, Doffins CleanCare" />
-        <meta property="og:title" content="Doffins CleanCare - Premium Cleaning Services in Nairobi" />
-        <meta property="og:description" content="Professional carpet, sofa, mattress cleaning and pest control services for homes and businesses in Nairobi, Kenya" />
+        <title>Doffins CleanCare | Professional Cleaning & Pest Control Excellence</title>
+        <meta name="description" content="Kenya's trusted partner for professional carpet, sofa, mattress cleaning, and pest control. Registered company Doffins & Co. Ltd. 100% Satisfaction Guaranteed." />
+        <meta name="keywords" content="carpet cleaning, sofa cleaning, mattress cleaning, pest control, fumigation services, deep cleaning, office cleaning, professional cleaning Kenya, Doffins CleanCare" />
+        <meta property="og:title" content="Doffins CleanCare - Professional Cleaning & Pest Control Excellence" />
+        <meta property="og:description" content="Professional carpet, sofa, mattress cleaning and pest control services for homes and businesses. Trusted by thousands." />
         <meta property="og:type" content="website" />
         <link rel="canonical" href="https://doffinscleancare.co.ke" />
       </Helmet>
@@ -28,7 +28,7 @@ export function RootLayout() {
         {/* Floating Social Icons */}
         <div className="fixed bottom-8 right-8 z-[60] flex flex-col gap-4">
           <motion.a
-            href="https://facebook.com"
+            href="https://www.facebook.com/share/18CAEMDG1J/"
             target="_blank"
             rel="noopener noreferrer"
             initial={{ opacity: 0, x: 20 }}
@@ -38,13 +38,13 @@ export function RootLayout() {
             aria-label="Follow us on Facebook"
           >
             <div className="absolute right-full mr-4 bg-white text-primary px-4 py-2 text-sm font-bold shadow-xl whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none border border-slate-100">
-              Chat with us on Facebook
+              Visit our Facebook
             </div>
             <Facebook className="h-6 w-6" />
           </motion.a>
           
           <motion.a
-            href="https://instagram.com"
+            href="https://www.instagram.com/doffins_carpet_care"
             target="_blank"
             rel="noopener noreferrer"
             initial={{ opacity: 0, x: 20 }}
@@ -54,7 +54,7 @@ export function RootLayout() {
             aria-label="Follow us on Instagram"
           >
             <div className="absolute right-full mr-4 bg-white text-primary px-4 py-2 text-sm font-bold shadow-xl whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none border border-slate-100">
-              Chat with us on Instagram
+              Visit our Instagram
             </div>
             <Instagram className="h-6 w-6" />
           </motion.a>

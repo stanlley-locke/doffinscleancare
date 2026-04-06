@@ -22,8 +22,8 @@ export function PricingPage() {
   return (
     <>
       <Helmet>
-        <title>Pricing | Doffins CleanCare </title>
-        <meta name="description" content="Transparent pricing for carpet cleaning, sofa cleaning, mattress cleaning, deep cleaning, and pest control services in Nairobi. Contact us for a free quote." />
+        <title>Pricing & Rates | Professional Cleaning & Pest Control Excellence</title>
+        <meta name="description" content="Transparent guide pricing for Doffins CleanCare services: Carpet, sofa, mattress, and deep house cleaning across Kenya. Get a customized quote within 60 minutes." />
         
         {/* JSON-LD Breadcrumbs */}
         <script type="application/ld+json">
@@ -122,22 +122,22 @@ export function PricingPage() {
               services.map((service, idx) => (
                 <motion.div
                   key={service.id}
-                  className="group border border-slate-100 hover:border-secondary transition-all p-12 bg-white flex flex-col items-center text-center hover:shadow-2xl hover:shadow-primary/5"
+                  className="group border border-slate-300 border-t-8 border-t-secondary/40 hover:border-secondary hover:border-t-secondary transition-all p-12 bg-white flex flex-col items-center text-center shadow-xl shadow-primary/5 hover:shadow-2xl hover:shadow-secondary/10"
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.6, delay: idx * 0.1 }}
                 >
                   <div className="mb-6">
-                    <h3 className="text-2xl font-bold mb-2 group-hover:text-primary transition-colors" style={{ fontFamily: "'Playfair Display', serif" }}>
+                    <h3 className="text-2xl font-bold mb-2 group-hover:text-secondary transition-colors" style={{ fontFamily: "'Playfair Display', serif" }}>
                       {service.displayName}
                     </h3>
-                    <p className="text-secondary font-bold uppercase tracking-widest text-[10px] mb-8">{service.category}</p>
+                    <p className="bg-secondary/10 text-secondary font-black uppercase tracking-widest text-[10px] mb-8 inline-block px-3 py-1">{service.category}</p>
                   </div>
                   
                   <div className="mb-10 flex items-baseline gap-2">
                     <span className="text-sm text-slate-400 font-medium">From</span>
-                    <span className="text-4xl font-black text-primary">
+                    <span className="text-4xl font-black text-secondary">
                       {service.startingPrice === 0 ? "Custom" : `KES ${service.startingPrice.toLocaleString()}`}
                     </span>
                     {service.startingPrice !== 0 && (
@@ -149,7 +149,7 @@ export function PricingPage() {
                     <ul className="space-y-4">
                       {service.features.map((feat: string, i: number) => (
                         <li key={i} className="flex items-center justify-center gap-3 text-slate-600 text-sm">
-                          <CheckCircle className="h-4 w-4 text-emerald-500 shrink-0" />
+                          <CheckCircle className="h-4 w-4 text-secondary shrink-0" />
                           {feat}
                         </li>
                       ))}
@@ -188,11 +188,11 @@ export function PricingPage() {
               <div className="space-y-10">
                 {[
                   { t: "Type of Service", d: "Let us know which cleaning or pest service you need.", i: <ClipboardList className="text-secondary" /> },
-                  { t: "Location Address", d: "Your exact location in Nairobi or surrounding areas.", i: <MapPin className="text-secondary" /> },
+                  { t: "Location Address", d: "Your exact location in Kenya.", i: <MapPin className="text-secondary" /> },
                   { t: "Quantity / Size", d: "Number of items (e.g. sofa seats) or approximate square footage.", i: <Send className="text-secondary" /> }
                 ].map((item, idx) => (
                   <div key={idx} className="flex gap-6 group">
-                    <div className="h-14 w-14 bg-white flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-all duration-500 shrink-0 shadow-sm border border-slate-100">
+                    <div className="h-14 w-14 bg-white flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-all duration-500 shrink-0 shadow-md border border-slate-200">
                       {item.i}
                     </div>
                     <div>

@@ -1,6 +1,5 @@
 import { Link } from 'react-router';
 import { Facebook, Instagram, MessageSquare, Phone, Mail, MapPin, ArrowRight } from 'lucide-react';
-import logo from '../../imports/doffinscoltd_logo.jpeg';
 import { motion } from 'motion/react';
 
 export function Footer() {
@@ -23,7 +22,7 @@ export function Footer() {
                 Let us restore <span className="text-secondary italic">freshness</span> to your space today
               </h2>
               <p className="text-xl mb-12 text-white/70 font-light tracking-wide uppercase">
-                Serving Nairobi & surrounding areas
+                Professional Cleaning & Pest Control Excellence
               </p>
               
               <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
@@ -55,24 +54,36 @@ export function Footer() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-20">
             {/* Brand Column */}
             <div className="space-y-8">
-              <Link to="/" className="inline-block">
-                <img src={logo} alt="Doffins CleanCare" className="h-20 w-auto brightness-110" />
+              <Link to="/" className="inline-block group">
+                <div className="bg-white p-2 rounded-md shadow-xl shadow-secondary/10 group-hover:scale-110 transition-transform duration-500">
+                  <img src="/doffinslogo.png" alt="Doffins CleanCare" className="h-16 w-auto" />
+                </div>
               </Link>
               <div className="space-y-4">
                 <h3 className="text-2xl font-bold tracking-tight" style={{ fontFamily: "'Playfair Display', serif" }}>
                   Doffins <span className="text-secondary">CleanCare</span>
                 </h3>
                 <p className="text-white/60 leading-relaxed font-light text-lg">
-                  Premium cleaning and pest control services for homes and businesses in Nairobi, Kenya.
+                  Premium cleaning and pest control solutions for residential and commercial spaces across Kenya.
                 </p>
                 <p className="text-sm font-bold uppercase tracking-widest text-white/40">
                   A brand of Doffins & Co. Ltd
                 </p>
               </div>
               <div className="flex gap-4">
-                {[Facebook, Instagram, MessageSquare].map((Icon, idx) => (
-                  <a key={idx} href="#" className="h-10 w-10 border border-white/10 flex items-center justify-center hover:bg-secondary hover:text-primary hover:border-secondary transition-all">
-                    <Icon className="h-5 w-5" />
+                {[
+                  { Icon: Facebook, href: "https://www.facebook.com/share/18CAEMDG1J/" },
+                  { Icon: Instagram, href: "https://www.instagram.com/doffins_carpet_care" },
+                  { Icon: MessageSquare, href: "https://wa.me/254704470840" }
+                ].map((item, idx) => (
+                  <a 
+                    key={idx} 
+                    href={item.href} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="h-10 w-10 border border-white/10 flex items-center justify-center hover:bg-secondary hover:text-primary hover:border-secondary transition-all"
+                  >
+                    <item.Icon className="h-5 w-5" />
                   </a>
                 ))}
               </div>
@@ -80,7 +91,7 @@ export function Footer() {
 
             {/* Quick Links Column */}
             <div>
-              <h4 className="text-xl font-bold mb-10 tracking-tight border-b border-secondary/30 pb-4 inline-block" style={{ fontFamily: "'Playfair Display', serif" }}>
+              <h4 className="text-xl font-bold mb-10 tracking-tight border-b-2 border-secondary pb-4 inline-block" style={{ fontFamily: "'Playfair Display', serif" }}>
                 Quick Links
               </h4>
               <ul className="space-y-4">
@@ -100,7 +111,7 @@ export function Footer() {
 
             {/* Services Column */}
             <div>
-              <h4 className="text-xl font-bold mb-10 tracking-tight border-b border-secondary/30 pb-4 inline-block" style={{ fontFamily: "'Playfair Display', serif" }}>
+              <h4 className="text-xl font-bold mb-10 tracking-tight border-b-2 border-secondary pb-4 inline-block" style={{ fontFamily: "'Playfair Display', serif" }}>
                 Our Services
               </h4>
               <ul className="space-y-4">
@@ -124,7 +135,7 @@ export function Footer() {
 
             {/* Contact Column */}
             <div>
-              <h4 className="text-xl font-bold mb-10 tracking-tight border-b border-secondary/30 pb-4 inline-block" style={{ fontFamily: "'Playfair Display', serif" }}>
+              <h4 className="text-xl font-bold mb-10 tracking-tight border-b-2 border-secondary pb-4 inline-block" style={{ fontFamily: "'Playfair Display', serif" }}>
                 Contact Us
               </h4>
               <div className="space-y-6">
@@ -165,15 +176,15 @@ export function Footer() {
                   </div>
                   <div>
                     <p className="text-xs uppercase tracking-widest text-white/40">Location</p>
-                    <p className="font-medium text-lg">Nairobi, Kenya</p>
+                    <p className="font-medium text-lg">Serving across Kenya</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="border-t border-white/5 pt-12 text-center text-white/30 text-sm tracking-widest uppercase font-medium">
-            <p>&copy; {new Date().getFullYear()} Doffins & Co. Ltd. All rights reserved.</p>
+          <div className="border-t border-white/5 pt-12 text-center text-white/30 text-[10px] sm:text-xs tracking-widest uppercase font-black">
+            <p>&copy; {new Date().getFullYear()} <span className="text-secondary">Doffins & Co. Ltd</span>. All rights reserved.</p>
           </div>
         </div>
       </section>
